@@ -5,9 +5,17 @@ pub struct User {
     pub username: &'static str,
 }
 
-pub fn build_user(email: &'static str, username: &'static str) -> User {
-    User {
-        email,
-        username,
+impl User {
+    pub fn new(email: &'static str, username: &'static str) -> User {
+        User {
+            email,
+            username,
+        }
+    }
+}
+
+impl User {
+    pub fn display_user_data(&self) {
+        println!("{:?}", &self);
     }
 }

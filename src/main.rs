@@ -1,43 +1,27 @@
 mod user;
-use user::*;
+use user::User;
 
+#[derive(Debug)]
+struct Person {
+    name: &'static str,
+    address: &'static str,
+    city: &'static str
+}
+
+impl Person {
+    fn new(name: &'static str, address: &'static str, city: &'static str) -> Person {
+       Person {
+            name,
+            address,
+            city,
+        }
+    }
+}
 fn main() {
     println!("Working with structs in Rust");
-    // Create a simple struct
 
-    #[derive(Debug)]
-    struct Employee {
-        firstname: String,
-        lastname: String,
-        age: i8,
-        position: String
-    };
-
-    #[derive(Debug)]
-    struct Person {
-        name: &'static str,
-        address: &'static str,
-        city: &'static str
-    };
-
-    let person = Person {
-        name: "Joey",
-        address: "82 Jeffcott St.",
-        city: "Adelaide"
-    };
-
+    let person = Person::new("Joey Vico", "joeyvico@gmail.com", "Adelaide");
     println!("{:?}", person);
-
-    let employee = Employee {
-        firstname: String::from("Sonoya"),
-        lastname: String::from("Mizuno"),
-        age: 32,
-        position: String::from("Natural born dancer"),
-    };
-
-    println!("{:?}", employee);
-
-    let user = user::build_user("sonoya@gmail.com", "Sonoya");
 
     // Creating another user with using the builder
     // You will have to make each field public as well
@@ -47,8 +31,12 @@ fn main() {
         username: "joeyvico",
     };
 
-    println!("{:?}", user);
     println!("{:?}", user2);
-}
 
+    // Using the method constructor new to create a new user
+    let user3 = User::new("dianelane@gmail.com", "Diane");
+    // println!("{:?}", user3);
+    // Use the method to print out user's data instead
+    User::display_user_data(&user3);
+}
 
