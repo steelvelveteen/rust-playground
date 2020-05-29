@@ -1,5 +1,5 @@
 #[derive(Debug)]
-enum Sex {
+enum Genre {
     _Male,
     Female,
     _Unknown,
@@ -17,7 +17,7 @@ struct UserDetails {
     first_name: String,
     last_name: String,
     email: String,
-    sex: Sex,
+    sex: Genre,
     address: Address,
 }
 
@@ -26,7 +26,7 @@ fn main() {
         first_name: String::from("Sonoya"),
         last_name: String::from("Mizuno"),
         email: String::from("sonoya@gmail.com"),
-        sex: Sex::Female,
+        sex: Genre::Female,
         address: Address {
             street: String::from("Jeffcott St."),
             number: 82,
