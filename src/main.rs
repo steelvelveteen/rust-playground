@@ -5,12 +5,12 @@ use user::User;
 struct Person {
     name: &'static str,
     address: &'static str,
-    city: &'static str
+    city: &'static str,
 }
 
 impl Person {
     fn new(name: &'static str, address: &'static str, city: &'static str) -> Person {
-       Person {
+        Person {
             name,
             address,
             city,
@@ -39,4 +39,3 @@ fn main() {
     // Use the method to print out user's data instead
     User::display_user_data(&user3);
 }
-

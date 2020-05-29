@@ -1,4 +1,3 @@
-
 #[derive(Debug)]
 pub struct User {
     pub email: &'static str,
@@ -7,10 +6,7 @@ pub struct User {
 
 impl User {
     pub fn new(email: &'static str, username: &'static str) -> User {
-        User {
-            email,
-            username,
-        }
+        User { email, username }
     }
 }
 
