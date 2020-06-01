@@ -35,3 +35,15 @@ fn largest_char(list: &[char]) -> char {
     }
     largest
 }
+
+fn largest_gen<T>(list: &[T]) -> T {
+    let mut largest = list[0];
+
+    for &item in list {
+        if item > largest {
+            largest = item;
+        }
+    }
+
+    largest
+}
