@@ -1,8 +1,8 @@
-# Rust Language Playground - From the official online book
+# Rust Language Playground
 
-## I really love this language but it's just so
+## I really love this language but it's just so ...
 
-### Branches
+### Branches (Variables and data types basics are not here)
 
 - 010 - Functions
 - 020 - Control flow
