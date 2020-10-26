@@ -17,4 +17,16 @@ fn main() {
      // Because if is an expression it can be used on the right
      // side of a let statement
     println!("The value of number is: {}", number);
+
+
+    // Repetition with loops
+    // and to the right of a let statement !!
+    let mut counter = 0;
+    let result = loop {
+        counter += 1;
+        if counter == 5 {
+            break counter * 2;
+        }
+    };
+    println!("The final result of counter is {}", result);
 }
