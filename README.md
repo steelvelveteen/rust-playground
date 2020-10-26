@@ -1,6 +1,6 @@
 # Rust Language Playground
 
-## I really love this language but it's just so ...
+## I really love this language but it's just so ... funky
 
 ### Branches (Variables and data types basics are not here)
 
