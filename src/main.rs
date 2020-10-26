@@ -25,8 +25,23 @@ fn main() {
     let result = loop {
         counter += 1;
         if counter == 5 {
+            // The value counter * 2 is what is
+            // returned after the break expression occurs
             break counter * 2;
         }
     };
     println!("The final result of counter is {}", result);
+
+    // Simple while loop. Nothing new in this
+    let mut subcounter = 0;
+    while subcounter != 5 {
+        println!("Subcounter: {}", subcounter + 1);
+        subcounter += 1;
+    }
+
+    // iterating for loops
+    let a = [10, 20, 30, 40, 50];
+    for element in a .iter() {
+        println!("Element in a: {}", element);
+    }
 }
