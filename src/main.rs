@@ -41,7 +41,7 @@ fn main() {
 
     // iterating for loops
     let a = [10, 20, 30, 40, 50];
-    for element in a .iter() {
+    for element in a.iter() {
         println!("Element in a: {}", element);
     }
 }
