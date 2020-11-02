@@ -6,6 +6,10 @@ struct User {
     active: bool,
 }
 
+struct Rectangle {
+    width: u32,
+    height: u32
+}
 // For now here I am using String objects
 // slices require lifetime specifier
 fn main() {
@@ -17,4 +21,15 @@ fn main() {
     };
 
     println!("{:#?}", user);
+
+    let rect = Rectangle {
+        width: 30,
+        height: 45
+    };
+
+    println!("The area of the rectangle is {} square units.", area(&rect));
+}
+
+fn area(rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
 }
