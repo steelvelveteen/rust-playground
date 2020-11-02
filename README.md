@@ -7,7 +7,7 @@
 - 010 - Functions
 - 020 - Control flow
 - 030 - Onwership
-- 040 - Strings and slices
+- 040 - Slice type
 - 050 - Structs
 - 060 - Methods
 - 070 - Enums
