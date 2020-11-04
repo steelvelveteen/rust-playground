@@ -1,33 +1,25 @@
 #[derive(Debug)]
-struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool,
-}
-
 struct Rectangle {
     width: u32,
-    height: u32
+    height: u32,
 }
-// For now here I am using String objects
-// slices require lifetime specifier
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
 fn main() {
-    let user = User {
-        username: String::from("someusername123"),
-        email: String::from("someone@example.com"),
-        sign_in_count: 1,
-        active: true,
-    };
-
-    println!("{:#?}", user);
-
     let rect = Rectangle {
         width: 30,
-        height: 45
+        height: 45,
     };
 
+    // Function form
     println!("The area of the rectangle is {} square units.", area(&rect));
+
+    // Method form
+    println!("The area of the rectangle is {} square units", rect.area());
 }
 
 fn area(rectangle: &Rectangle) -> u32 {
