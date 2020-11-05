@@ -2,6 +2,7 @@
 enum IpAddr {
     V4(String),
     V6(String),
+    Random(u32)
 }
 
 fn main() {
@@ -17,14 +18,17 @@ fn main() {
     match addr3 {
         Some(IpAddr::V4(val)) | Some(IpAddr::V6(val)) => println!("{}", val),
         // Some(IpAddr::V6(val)) => println!("{}", val),
+        Some(IpAddr::Random(num)) => println!("{}", num),
         None => println!("No"),
     }
 
     // Better way
-    let addr4 = IpAddr::V4(String::from("A message for V4"));
-    match addr4 {
+    // let addr4 = IpAddr::V4(String::from("A message for V4"));
+    let addr5 = IpAddr::Random(48);
+    match addr5 {
         IpAddr::V4(value) => println!("{}", value),
         IpAddr::V6(value) => println!("{}", value),
+        IpAddr::Random(number) => println!("{}", number)
     }
     
 }
