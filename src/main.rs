@@ -18,7 +18,7 @@ fn main() {
     // Function form
     println!("The area of the rectangle is {} square units.", area(&rect));
 
-    // Method form
+    // Method form using implement
     println!("The area of the rectangle is {} square units", rect.area());
 }
 
