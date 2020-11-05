@@ -15,3 +15,4 @@
 - 090 - Vectors
 - 100 - Hash maps
 - 110 - Error handling  
+- 120 - Strings  
