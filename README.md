@@ -11,8 +11,9 @@
 - 050 - Structs
 - 060 - Methods
 - 070 - Enums
-- 080 - Match control flow
-- 090 - Vectors
-- 100 - Hash maps
+- 080 - Match control flow  
+- 090 - Match if let pattern  
+- 100 - Vectors
 - 110 - Error handling  
 - 120 - Strings  
+- 130 - Hash maps  
