@@ -42,4 +42,10 @@ fn main() {
     for element in a.iter() {
         println!("Element in a: {}", element);
     }
+
+    // You can define an array in the for construct using ranges
+    // Two dots is exclusive, three is inclusive(experimental)
+    for i in 1..9 {
+        println!("{}", i);
+    }
 }
