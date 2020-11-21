@@ -5,7 +5,6 @@
 use std::io;
 
 fn main() {
-<<<<<<< HEAD
     let some_u8_value = Some('N');
     if let Some('y') | Some('Y') = some_u8_value {
         println!("Yes");
@@ -19,7 +18,4 @@ fn main() {
         .read_line(&mut first_name)
         .expect("Failed to enter name");
     println!("{}", first_name);
-=======
-    
->>>>>>> master
 }
