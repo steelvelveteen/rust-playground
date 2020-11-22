@@ -17,7 +17,7 @@ fn main() {
     println!("Changed name: {}", name_string);
 }
 
-fn change_name(name: &mut String) -> &String{
+fn change_name(name: &mut String) -> &String {
     name.push_str(" Lopez");
     name
 }
