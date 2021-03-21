@@ -2,7 +2,7 @@
 
 ## I really love this language but it's just so ... funky
 
-### Branches (The very basic topics are in the master branch)
+### Branches  
 
 - 010 - Functions
 - 020 - Control flow
