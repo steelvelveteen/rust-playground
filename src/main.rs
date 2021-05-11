@@ -13,7 +13,7 @@ fn main() {
     let condition = true;
     let number = if condition { 5 } else { 6 };
 
-    // Because if is an expression it can be used on the right
+    // Because if is an expression it can be used on the right, meaning that an if expression returns a value
     // side of a let statement
     println!("The value of number is: {}", number);
 
